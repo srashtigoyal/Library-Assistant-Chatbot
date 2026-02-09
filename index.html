@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Library Assistant AI</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+<div class="app">
+  <header class="header">
+    <div class="logo">📚</div>
+    <div>
+      <h1>Library Assistant AI</h1>
+      <p>Your intelligent academic companion</p>
+    </div>
+  </header>
+
+  <main id="chat-box" class="chat-box"></main>
+
+  <div class="typing" id="typing">AI is typing...</div>
+
+  <div class="input-wrapper">
+  <div class="input-area">
+    <input id="user-input" placeholder="Ask about books, rules, timings..." />
+    <button onclick="sendMessage()">▶</button>
+  </div>
+
+  <div class="copyright">
+    © <span id="year"></span> Srashti Goyal · Library Assistant AI
+  </div>
+</div>
+
+<script src="/static/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</body>
+</html>
